@@ -30,6 +30,8 @@ class Queue:
       self.front = self.front.next
       return popped_item
   def front_at_q(self):
+    if self.head == None:
+      return -1
     self.front = self.head
     return self.head.data
   def is_empty(self):
